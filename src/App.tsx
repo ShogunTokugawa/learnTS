@@ -1,24 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header
+        title={'Shop'}
+        logo={'https://lh3.googleusercontent.com/proxy/SWa8hXrZPzNvGI1UtzlXci-wMeeI25rK6R5dvwR9r7FoKX5wWLSoVtV5_7DeHgvtxaT2dj32p0ZS9OC_XOmDqPRc2oV-oXzB9s_OJY2VRxG6tkWzeswGdqMCSmxGIn9ERPUFjIKcn6HB1-oQuylTzE3pPZDh5Th_PUbbOi-hHJ0_qVw0u58'}
+        bgColor={'red'}
+      />
+      <Nav
+        links={
+            [
+                {
+                    title: 'Новости',
+                    link: '/news'
+                },
+                {
+                    title: 'Блог',
+                    link: '/blog'
+                },
+                {
+                    title: 'Каталог',
+                    link: '/catalog'
+                },
+                {
+                    title: 'Контакты',
+                    link: '/contact'
+                },
+                {
+                    title: 'Инфо',
+                    link: '/news'
+                },
+            ]}
+      />
+      <Footer/>
     </div>
   );
 }
