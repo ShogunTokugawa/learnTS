@@ -1,0 +1,13 @@
+import React from "react";
+
+type TProps = {
+    rating: number,
+};
+
+const Rating: React.FC<TProps> = ({ rating }) => (
+    <>
+     123
+    </>
+);
+
+export default Rating;
